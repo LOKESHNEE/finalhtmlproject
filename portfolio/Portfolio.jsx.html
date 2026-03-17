@@ -1,0 +1,102 @@
+import React from 'react';
+import { Github, Linkedin, Mail, Code, Database, Layers } from 'lucide-react';
+
+const Portfolio = () => {
+return (
+<div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+    {/* Navigation */}
+    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span className="text-xl font-bold tracking-tight text-blue-600">LN.</span>
+            <div className="space-x-8 text-sm font-medium">
+                <a href="#about" className="hover:text-blue-600 transition">About</a>
+                <a href="#skills" className="hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" className="hover:text-blue-600 transition">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    {/* Hero Section */}
+    <section id="about" className="max-w-5xl mx-auto px-6 py-20">
+        <h1 className="text-5xl font-extrabold mb-4">Lokesh Neelam [cite: 1]</h1>
+        <h2 className="text-2xl text-blue-600 font-semibold mb-6">Java Backend Developer [cite: 6]</h2>
+        <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-2xl">
+            Recent Computer Science and Engineering graduate [cite: 4, 9] focused on building scalable backend
+            solutions.
+            Passionate about Java 8, OOP principles [cite: 5, 30], and optimizing database performance[cite: 19].
+        </p>
+        <div className="flex gap-4">
+            <a href="mailto:neelamlokesh7029@gmail.com"
+                className="p-2 bg-slate-200 rounded-full hover:bg-blue-100 transition">
+                <Mail size={20} />
+            </a>
+            <a href="https://www.linkedin.com/in/lokesh-neelam-3b687b297/"
+                className="p-2 bg-slate-200 rounded-full hover:bg-blue-100 transition">
+                <Linkedin size={20} />
+            </a>
+        </div>
+    </section>
+
+    {/* Skills Section */}
+    <section id="skills" className="bg-white py-20">
+        <div className="max-w-5xl mx-auto px-6">
+            <h3 className="text-3xl font-bold mb-12">Technical Toolbox [cite: 24]</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+                <div className="p-6 border border-slate-100 rounded-xl bg-slate-50">
+                    <Code className="text-blue-600 mb-4" />
+                    <h4 className="font-bold mb-2">Languages</h4>
+                    <p className="text-slate-600 text-sm">Java (Core & 8), JavaScript [cite: 25]</p>
+                </div>
+                <div className="p-6 border border-slate-100 rounded-xl bg-slate-50">
+                    <Layers className="text-blue-600 mb-4" />
+                    <h4 className="font-bold mb-2">Backend & Frameworks</h4>
+                    <p className="text-slate-600 text-sm">Spring Core (IoC, DI), Hibernate [cite: 5, 26]</p>
+                </div>
+                <div className="p-6 border border-slate-100 rounded-xl bg-slate-50">
+                    <Database className="text-blue-600 mb-4" />
+                    <h4 className="font-bold mb-2">Web & DB</h4>
+                    <p className="text-slate-600 text-sm">MySQL, ReactJS, HTML5, CSS3, Bootstrap [cite: 27, 28]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {/* Projects Section */}
+    <section id="projects" className="py-20 max-w-5xl mx-auto px-6">
+        <h3 className="text-3xl font-bold mb-12">Featured Projects [cite: 17]</h3>
+        <div className="grid md:grid-cols-2 gap-10">
+            <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <h4 className="text-xl font-bold mb-3">Smart Habit Tracker [cite: 18]</h4>
+                <p className="text-slate-600 text-sm mb-4">
+                    Developed using Java and MySQL, implementing CRUD operations[cite: 19].
+                    Optimized SQL queries and built a responsive UI with Bootstrap[cite: 19, 20].
+                </p>
+                <div className="flex gap-2">
+                    <span className="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full">Java [cite: 19]</span>
+                    <span className="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full">MySQL [cite: 19]</span>
+                </div>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <h4 className="text-xl font-bold mb-3">Resume Builder Application [cite: 21]</h4>
+                <p className="text-slate-600 text-sm mb-4">
+                    Created a secure application with role-based access[cite: 22].
+                    Designed relational database schemas and applied OOP principles[cite: 23].
+                </p>
+                <div className="flex gap-2">
+                    <span className="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full">Java [cite: 22]</span>
+                    <span className="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full">MySQL [cite: 22]</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {/* Footer */}
+    <footer className="bg-slate-900 text-white py-12 text-center">
+        <p className="text-slate-400 text-sm mb-2">B.E. in Computer Science and Engineering | CGPA: 7.23 [cite: 9]</p>
+        <p className="font-medium">Lokesh Neelam © 2026</p>
+    </footer>
+</div>
+);
+};
+
+export default Portfolio;
